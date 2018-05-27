@@ -1,0 +1,15 @@
+.beer__card{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background: $white;
+}
+
+.beer__style{
+  color: $grey;
+}
+
+.beer__name{
+  color:$black;
+}
