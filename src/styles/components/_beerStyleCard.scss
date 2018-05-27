@@ -1,9 +1,13 @@
 .beer__style--container{
-  margin: auto;
+  margin:20px auto;
   max-width: 1250px;
+  border-bottom: 1px solid $black-light;
+  padding-bottom: 20px;
+  z-index: 1;
 }
 
-.beer__style{
+.beer__style--card{
   display: flex;
   flex-wrap: wrap;
+  max-width: 1250px;
 }

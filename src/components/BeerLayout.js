@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchBeerWithRedux } from '../redux/actions/apiActions';
 import Navbar from './Navbar';
-import { styleSelector, beerSelector } from '../redux/selectors/styleSelector';
+import { styleSelector, beerSelector } from '../redux/selectors/beerSelector';
 import BeerCard from './BeerCard';
 import BeerStyleCard from './BeerStyleCard';
 
@@ -14,12 +14,10 @@ class BeerLayout extends React.Component{
   render(){
     return(
       <div>
-        <Navbar/>
         {
           this.props.styles.map(style=>{
-            return <BeerStyleCard beers={beerSelector(this.props.beers,style)} style={style}/>
-            
-          })
+           return <BeerStyleCard key={style} beers={beerSelector(this.props.beers,style)} style={style}/>
+         })
         }
       </div>
     )

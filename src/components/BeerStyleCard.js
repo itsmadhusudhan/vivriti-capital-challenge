@@ -1,19 +1,33 @@
 import React from 'react';
+import {connect} from "react-redux";
 import BeerCard from './BeerCard';
+import {beerNameSelector}  from "../redux/selectors/beerSelector";
 
 const BeerStyleCard=(props)=>{
   return(
-    <div className="beer__style--container">
+    <React.Fragment>
+    {
+      beerNameSelector(props.beers,props.filters.name).length!==0?
+      <div className="beer__style--container">
       <h2>{props.style}</h2>
-      <div className="beer__style">
+      <div className="beer__style--card">
       {
-        props.beers.map(beer=>{
+      beerNameSelector(props.beers,props.filters.name).map(beer=>{
           return <BeerCard key={beer.id} beer={beer}/>
         })
       }
       </div>
-    </div>
+    </div>:""
+  }
+  </React.Fragment>
   )
 }
 
-export default BeerStyleCard;
+const mapStateToProps=(state)=>{
+  return{
+    filters:state.filters
+  }
+}
+
+
+export default connect(mapStateToProps)(BeerStyleCard);

@@ -1,5 +1,5 @@
 export const middleware = store => next => action => {
-  // console.log("Middleware triggered:",action.type);
+  console.log("Middleware triggered:",action.type);
   if(typeof action==="function"){
     return action(store.dispatch)
   }

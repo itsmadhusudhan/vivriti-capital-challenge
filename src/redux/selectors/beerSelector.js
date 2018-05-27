@@ -5,3 +5,11 @@ export const styleSelector = beers => {
 export const beerSelector=(beers,style)=>{
   return beers.filter(beer=>beer.style===style);
 }
+
+
+export const beerNameSelector=(beers,name="")=>{
+  return beers.filter(beer=>{
+    const nameMatch=beer.name.toLowerCase().includes(name.toLowerCase());
+    return nameMatch;    
+  })
+}

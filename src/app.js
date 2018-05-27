@@ -6,6 +6,7 @@ import "./styles/style.scss";
 import configStore from "./redux/store/configStore";
 import { fetchBeerWithRedux } from "./redux/actions/apiActions";
 import { addItem } from "./redux/actions/cartActions";
+import AppRouter from "./routers/AppRouter";
 
 const store = configStore();
 
@@ -17,10 +18,16 @@ store.dispatch(fetchBeerWithRedux());
 
 const app = (
   <Provider store={store}>
-    <BeerLayout />
+    <AppRouter/>
   </Provider>
 );
 
-setTimeout(() => {
+function run() {
   ReactDOM.render(app, document.getElementById("root"));
-}, 2000);
+}
+
+if (window.addEventListener) {
+  window.addEventListener("DOMContentLoaded", run);
+} else {
+  window.attachEvent("onload", run);
+}
