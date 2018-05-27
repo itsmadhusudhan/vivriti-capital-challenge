@@ -11,7 +11,7 @@
 ## How to Run?
 1. Open the app folder in your favourite editor or just 
 2. open the project folder in terminal and run `npm install` or `yarn install`
-3. Now run `yarn build` or `npm build` for production app.
+3. Now run `yarn build` or `npm build` for production app(I have already included build file you can skip this step if needed)
 4. run `yarn -g install live-server` to install live server or you can use any web server to serve app from public folder
 
 5. finally run `live-server public/` to run app on local host
