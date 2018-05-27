@@ -1,4 +1,4 @@
-# Vivitri Capital Hiring Challenge
+# Vivriti Capital Hiring Challenge
 
 ## Libraries Used
 1. Reactjs

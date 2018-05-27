@@ -9,7 +9,7 @@ const Navbar = props => {
     <nav className="navbar">
 
       <a href="/" className="navbar__item">
-        <h1>Vivitri Capital</h1>
+        <h1>Vivriti Capital</h1>
       </a>
 
       <NavLink to="/" className="navbar__item">
