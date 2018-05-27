@@ -12,7 +12,7 @@ const store = configStore();
 
 try {
   const beers = JSON.parse(localStorage.getItem("beers"));
-  console.log(beers)
+  //call the api only if beers are not stored in local storage
   !beers?store.dispatch(fetchBeerWithRedux()):store.dispatch(fetchBeerSuccess(beers.beer))
   
 } catch (e) {

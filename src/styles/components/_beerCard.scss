@@ -85,3 +85,23 @@
   }
   
 }
+
+
+@media screen and (max-width:1240px){
+  .beer__card{
+    width: 260px;
+  }
+}
+
+@media screen and (max-width:1160px){
+  .beer__card{
+    width: 250px;
+  }
+}
+
+
+@media screen and (max-width:840px){
+  .beer__card{
+    width: 300px;
+  }
+}

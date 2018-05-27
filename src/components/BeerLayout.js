@@ -13,7 +13,7 @@ class BeerLayout extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className="wrapper">
         {
           this.props.styles.map(style=>{
            return <BeerStyleCard key={style} beers={beerSelector(this.props.beers,style)} style={style}/>
