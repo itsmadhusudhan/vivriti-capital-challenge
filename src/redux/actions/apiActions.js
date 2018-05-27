@@ -6,18 +6,19 @@ export const fetchBeer = () => {
 
 
 export const fetchBeerRequest=()=>({
-  type:"FETCH_BEER_REQUEST"
+  type:"FETCH_BEERS_REQUEST"
 })
 
 
-export const fetchBeerSuccess=(Beer)=>({
-  type:"FETCH_BEER_SUCCESS",
-  Beer
+export const fetchBeerSuccess=(beers)=>({
+  type:"FETCH_BEERS_SUCCESS",
+  beers
 });
 
 export const fetchBeerError=()=>({
-  type:"FETCH_BEER_ERROR"
+  type:"FETCH_BEERS_ERROR"
 })
+
 
 export const fetchBeerWithRedux = () => {
   return dispatch => {

@@ -13,3 +13,7 @@ export const beerNameSelector=(beers,name="")=>{
     return nameMatch;    
   })
 }
+
+export const cartItemSelector=(items)=>{
+  return [...new Set(items)]
+}

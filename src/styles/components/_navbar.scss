@@ -67,7 +67,6 @@
 }
 
 .navbar__search--input {
-  // margin-right: 10px;
   border-radius: 5px 0 0 5px;
   border: none;
   padding: 8px;
@@ -75,6 +74,7 @@
 
 .navbar__item--shop {
   position: relative;
+  cursor: pointer;
   &:hover > .navbar__item--dropdown {
     display: grid;
     grid-template-columns: repeat(2, 200px);
