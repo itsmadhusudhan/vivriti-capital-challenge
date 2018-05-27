@@ -1,13 +1,12 @@
 {
   "name": "vivriti-capital-challenge",
   "version": "1.0.0",
-  "description": "Front End application built as a part of vivitri capital frond end hiring challenge",
+  "description": "Front End application built as a part of vivriti Capital frond end hiring challenge",
   "main": "index.js",
   "author": "Madhusudhan R",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production",
-    "test": "jest --watch"
+    "build": "webpack --mode production"
   },
   "license": "MIT",
   "private": true,
@@ -17,8 +16,7 @@
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
-    "redux": "^4.0.0",
-    "uuid": "^3.2.1"
+    "redux": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -28,7 +26,6 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
-    "jest": "^22.4.3",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
